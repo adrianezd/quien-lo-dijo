@@ -1,0 +1,19 @@
+{
+  "name": "¿Quién lo dijo?",
+  "short_name": "Quién lo dijo",
+  "description": "Reto diario de 10 frases célebres: adivina quién dijo cada una entre cuatro opciones.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#5b3cc4",
+  "theme_color": "#5b3cc4",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

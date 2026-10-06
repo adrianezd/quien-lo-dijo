@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>¿Quién lo dijo? — Adivina el autor de frases célebres</title>
+<meta name="description" content="Juego gratis de frases célebres: políticos, futbolistas, humoristas y películas. Lee la frase y adivina quién la dijo entre cuatro opciones. Reto diario de 10 frases.">
+<link rel="canonical" href="https://adrianezd.github.io/quien-lo-dijo/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5b3cc4">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Quién lo dijo?">
+<meta property="og:description" content="Rajoy, Mourinho, Chiquito o Churchill: adivina quién dijo cada frase.">
+<meta property="og:url" content="https://adrianezd.github.io/quien-lo-dijo/">
+<meta property="og:locale" content="es_ES">
+<link rel="stylesheet" href="style.css">
+<!-- seo -->
+<meta name="keywords" content="quien lo dijo, frases celebres, juego frases, frases famosas españa, trivial frases">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="adrianezd">
+<meta property="og:site_name" content="¿Quién lo dijo?">
+<meta property="og:image" content="https://adrianezd.github.io/quien-lo-dijo/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="¿Quién lo dijo?">
+<meta name="twitter:description" content="Juego de frases célebres: lee la frase y adivina quién la dijo entre cuatro opciones. Reto diario de 10 frases.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["WebApplication","Game"],"name":"¿Quién lo dijo?","url":"https://adrianezd.github.io/quien-lo-dijo/","description":"Juego de frases célebres: lee la frase y adivina quién la dijo entre cuatro opciones. Reto diario de 10 frases.","inLanguage":"es","applicationCategory":"GameApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"adrianezd"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué tipo de frases salen?","acceptedAnswer":{"@type":"Answer","text":"De políticos, futbolistas, humoristas, películas y personajes históricos."}},{"@type":"Question","name":"¿Cuántas frases hay cada día?","acceptedAnswer":{"@type":"Answer","text":"Diez, las mismas para todo el mundo."}},{"@type":"Question","name":"¿Puedo compartir el resultado?","acceptedAnswer":{"@type":"Answer","text":"Sí, al terminar puedes copiar tu resultado sin desvelar las respuestas."}}]}]}</script>
+<!-- /seo -->
+</head>
+<body>
+<header class="top">
+  <h1>💬 ¿Quién lo dijo?</h1>
+  <p class="sub">Reto <span id="numero"></span> · <span id="progreso"></span></p>
+</header>
+<main>
+  <section class="tarjeta frase" id="caja">
+    <blockquote id="frase"></blockquote>
+    <p class="contexto" id="contexto"></p>
+  </section>
+  <div class="opciones" id="opciones"></div>
+  <button class="boton" id="siguiente" hidden>Siguiente</button>
+  <section class="tarjeta final" id="final" hidden>
+    <h2 id="finalTit"></h2>
+    <p id="finalTxt"></p>
+    <button class="boton" id="compartir">Compartir</button>
+    <button class="boton sec" id="libre">Seguir jugando</button>
+  </section>
+  <section class="texto">
+    <h2>Cómo se juega</h2>
+    <p>Cada día hay 10 frases célebres. Elige quién la dijo entre cuatro opciones. Al acabar puedes compartir tu resultado o seguir jugando con frases al azar.</p>
+  </section>
+</main>
+<footer>Hecho por adrianezd.</footer>
+<!-- red -->
+<section class="seo-faq" style="max-width:760px;margin:0 auto;padding:8px 16px;font-size:.92rem;opacity:.85"><h2 style="font-size:1rem">Preguntas frecuentes</h2><details><summary>¿Qué tipo de frases salen?</summary><p>De políticos, futbolistas, humoristas, películas y personajes históricos.</p></details><details><summary>¿Cuántas frases hay cada día?</summary><p>Diez, las mismas para todo el mundo.</p></details><details><summary>¿Puedo compartir el resultado?</summary><p>Sí, al terminar puedes copiar tu resultado sin desvelar las respuestas.</p></details></section>
+<nav class="seo-red" style="max-width:760px;margin:0 auto;padding:8px 16px 28px;font-size:.85rem;opacity:.75;text-align:center">Más webs gratis: <a href="https://adrianezd.github.io/precio-luz-hoy/">Precio de la luz</a> · <a href="https://adrianezd.github.io/sueldo-neto/">Sueldo neto</a> · <a href="https://adrianezd.github.io/la-previa/">La Previa</a> · <a href="https://adrianezd.github.io/brisca-maldita/">Brisca Maldita</a> · <a href="https://adrianezd.github.io/embalses-hoy/">Embalses hoy</a> · <a href="https://adrianezd.github.io/calendario-laboral/">Calendario laboral</a> · <a href="https://adrianezd.github.io/alquilar-o-comprar/">Alquilar o comprar</a> · <a href="https://adrianezd.github.io/coste-viaje/">Coste del viaje</a> · <a href="https://adrianezd.github.io/pueblodle/">Pueblodle</a> · <a href="https://adrianezd.github.io/grid-laliga/">Grid LaLiga</a> · <a href="https://adrianezd.github.io/quien-lo-dijo/">Quién lo dijo</a> · <a href="https://adrianezd.github.io/el-mentiroso/">El Mentiroso</a></nav>
+<!-- /red -->
+<script src="frases.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

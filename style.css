@@ -1,0 +1,26 @@
+[hidden] { display: none !important; }
+:root { --bg: #f4f1fb; --card: #fff; --text: #1f1933; --muted: #6c6485; --border: #e1dcef; --accent: #5b3cc4; --ok: #2f9e6e; --mal: #d9534f; }
+@media (prefers-color-scheme: dark) { :root { --bg: #130f20; --card: #1d182e; --text: #eeeaf8; --muted: #a9a1c2; --border: #312a48; --accent: #8b6cf0; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.top { text-align: center; padding: 20px 16px 4px; }
+h1 { margin: 0; font-size: 1.8rem; }
+h2 { font-size: 1.05rem; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 4px 0; }
+main { max-width: 560px; margin: 0 auto; padding: 8px 16px 24px; display: grid; gap: 12px; }
+.tarjeta { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+.frase blockquote { margin: 0; font: italic 600 1.45rem/1.35 Georgia, 'Times New Roman', serif; }
+.frase blockquote::before { content: '“'; color: var(--accent); }
+.frase blockquote::after { content: '”'; color: var(--accent); }
+.contexto { color: var(--muted); margin: 10px 0 0; min-height: 1.5em; }
+.opciones { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.opcion { border: 2px solid var(--border); background: var(--card); color: var(--text); font: inherit; font-weight: 700; padding: 14px 10px; border-radius: 12px; cursor: pointer; }
+.opcion:hover:not(:disabled) { border-color: var(--accent); }
+.opcion.ok { background: var(--ok); border-color: var(--ok); color: #fff; }
+.opcion.mal { background: var(--mal); border-color: var(--mal); color: #fff; }
+.boton { border: 0; background: var(--accent); color: #fff; font: inherit; font-weight: 700; padding: 12px 18px; border-radius: 10px; cursor: pointer; width: 100%; }
+.boton.sec { background: transparent; color: var(--muted); border: 1px solid var(--border); margin-top: 8px; }
+.final { text-align: center; }
+.texto { color: var(--muted); font-size: .92rem; }
+footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 0 16px 24px; }
+@media (max-width: 420px) { .opciones { grid-template-columns: 1fr; } }
